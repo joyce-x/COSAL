@@ -4,7 +4,9 @@ Source code for paper "accurate and scalable graph neural networks for billion-s
 ## Requirements
 
 ## Usage
-`$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file citeseer --topk 5 --cap_hidden_size 32 --rouit 1 --lr 0.011 --weight_decay 0.02 --dropout 0.6 --batch_size 64 --threshold 0.5 --reg_coef 0.039 --beta 0.32 --eps 0.001 --alpha 0.26`  
+```  
+$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file citeseer --topk 5 --cap_hidden_size 32 --rouit 1 --lr 0.011 --weight_decay 0.02 --dropout 0.6 --batch_size 64 --threshold 0.5 --reg_coef 0.039 --beta 0.32 --eps 0.001 --alpha 0.26
+```  
 `$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file cora --topk 10 --alpha 0.33 --cap_hidden_size 32 --rouit 2 --lr 0.012  --weight_decay 0.005 --dropout 0.7 --batch_size 16 --threshold 0.87 --reg_coef 0.0004 --beta 0.76 --eps 0.001 --eval_step 10`  
 `$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file pubmed --topk 256 --alpha 0.05 --cap_hidden_size 16 --rouit 4 --lr 0.002 --weight_decay 0.0001 --dropout 0.5 --batch_size 128 --threshold 0.3 --reg_coef 0.00015 --beta 0.68 --eps 1e-05`  
 `$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file flickr.npz --eps 1e-4 --topk 128 --cap_hidden_size 32  --rouit 2 --lr 0.01 --weight_decay 0.0001 --dropout 0.0 --batch_size 512 --threshold 0.5 --reg_coef 0.0001 --beta 0.5  --alpha 0.26 --hidden_size 64`  
