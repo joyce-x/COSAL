@@ -20,10 +20,10 @@ $ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file flickr.npz --eps 1e-4 --t
 $ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file amazon2M.npz --eps 1e-4  --cap_hidden_size 16 --hidden_size 64 --lr 0.015 --weight_decay 0.00015 --rouit 2 --dropout 0.1 --topk 256 --alpha 0.26 --beta 0.83 --reg_coef 0.00012  --threshold 0.1
 ```  
 ```  
-$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file mag_coarse.npz --eps 1e-3  --cap_hidden_size 10 --hidden_size 40 --lr 5e-3 --weight_decay 1e-2 --rouit 1 --dropout 0.1 --topk 10 --alpha 0.25 --beta 0.45 --reg_coef 0.003  --threshold 0.8
+$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file mag_coarse.npz --eps 1e-3  --cap_hidden_size 16 --hidden_size 64 --lr 5e-3 --weight_decay 1e-2 --rouit 1 --dropout 0.1 --topk 128 --alpha 0.25 --beta 0.45 --reg_coef 0.003  --threshold 0.8
 ```  
 ```  
-$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file ogbn-papers100M  --eps 1e-3  --cap_hidden_size 10 --hidden_size 40 --lr 5e-3 --weight_decay 0.0001 --rouit 2 --dropout 0.1 --topk 128 --alpha 0.28 --beta 0.5 --reg_coef 0.0001  --threshold 0.5  --init_mtd 0 --attention 1
+$ CUDA_VISIBLE_DEVICES=1 python -u main.py --data_file ogbn-papers100M  --eps 1e-3  --cap_hidden_size 16 --hidden_size 64 --lr 5e-3 --weight_decay 0.0001 --rouit 2 --dropout 0.1 --topk 128 --alpha 0.28 --beta 0.5 --reg_coef 0.0001  --threshold 0.5  --init_mtd 0 --attention 1
 ```  
 
 
